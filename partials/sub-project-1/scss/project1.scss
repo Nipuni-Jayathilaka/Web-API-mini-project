@@ -1,0 +1,25 @@
+
+#cursor{
+    width: 75px;
+    height: 75px;
+    background-color: rebeccapurple;
+    border-radius: 100%;
+    position: fixed;
+    outline: 0 solid pink;
+    transform: translate(-50%, -50%);
+    animation-name: wave;
+    animation-duration: 1.2s;
+    animation-iteration-count: infinite;
+    transition: opacity 0.5s;
+    pointer-events: none;
+}
+
+
+@keyframes wave{
+    from{
+        outline-width: 5px;
+    }
+    80%,to{
+        outline-width: 25px;
+    }
+}
